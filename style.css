@@ -1,0 +1,206 @@
+
+/* DOM*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;;
+    overflow-x: hidden
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(39, 39, 39);
+    margin:0;
+    padding:0;
+    max-width: 100%;
+}
+
+/* ELEMENTOS */
+
+h2 {
+    color:rgb(54, 54, 54);
+    margin-top: 0;
+    margin-bottom: .4rem;
+    font-size: 2em;
+}
+h3 {
+    color:rgb(54, 54, 54);
+    margin: 0.5rem;  
+    font-size: x-large; 
+}
+ul {
+    margin:0;
+    padding:0
+}
+li {
+    float:left;
+    list-style:none;
+    padding: 16px;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color:black
+}
+header{
+    margin-bottom: 0px;
+}
+nav{
+    margin-top:0px;
+}
+
+
+/* CLASES */
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(227, 243, 255), rgb(255, 255, 255));
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width:20rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.icono{
+    box-shadow: inset 0 0 0 0 #ffffff;
+    color: #cacaca;
+    font-size: 2em;
+    transition: 250ms;
+}
+.icono:hover{
+    color: #57d476;
+    outline: 12px solid rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+}
+
+.techBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+    min-width: 100px;
+    cursor:pointer;
+}
+
+.li-box{
+    float: center;
+    padding: 0px;
+}
+
+.tech-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.centerBox{
+    display:flex;
+    flex-direction: column;
+}
+
+.expText{
+    text-align: center;
+    font-size:medium;
+}
+.hrExp{
+    max-width: 14rem;
+}
+.bgExp:hover{
+    background-color: rgb(243, 243, 243);
+}
+.striped {
+    background: linear-gradient(to bottom, rgb(94, 179, 236) 30%, rgb(255, 255, 255) 20%);
+}
+.techBox:hover .techP{
+    text-decoration: underline;
+}
+.triangulo {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 15.5px 17px 15.5px;
+    border-color: transparent transparent #33B0FF transparent;
+    transform: rotate(180deg);
+    cursor:pointer
+}
+.trianguloInv {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 15.5px 17px 15.5px;
+    border-color: transparent transparent #33B0FF transparent;
+    transform: rotate(0deg);
+    display: none;
+    cursor:pointer
+}
+
+/* IDs */
+
+#pic {
+    border-radius: 50%;
+    outline: 2px solid #ffffff ;
+    transition: 100ms;
+}
+#pic:hover{
+    cursor: pointer;
+    outline: 5px double #578dd4; 
+}
+#tituloA{
+    margin-top: 1.3rem;
+    margin-bottom: 0rem;
+    color:#919191
+}
+#contactBg{
+    background-image: url('img/images.jpg');
+    background-repeat: no-repeat;
+}
+#bioP{
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+}
+#contactForm{
+    display:none;
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 575px) {
+
+    .caja {
+        width:19rem;
+    }
+
+}
+
+@media (min-width: 576px) {
+
+    .caja {
+        width:30rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .caja {
+        width:40rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .caja {
+        width:50rem;
+    }
+    .hrExp{
+        min-width: 32rem;
+    }
+
+}

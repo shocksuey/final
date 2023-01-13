@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67a256007e.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="caja striped">
+            <img src="" alt="foto_de_perfil" id="pic">
+            <span id="tituloA"><strong>Hola, me llamo</strong></span>
+            <h2 id="tituloB"></h2>
+            <ul>
+                <li id="iPersona"><i class="fa-regular fa-user icono"></i></li>
+                <li id="iMail"><i class="fa-regular fa-envelope icono"></i></li>
+                <li id="iInfo"><i class="fa-regular fa-keyboard icono"></i></li>
+                <li id="iContacto"><i class="fa-regular fa-address-card icono"></i></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- <nav>
+        <div class="caja">
+            <ul>
+                <li>Tech</li>
+                <li>Exp</li>
+                <li>Bio</li>
+                <li>Cont</li>
+            </ul>
+        </div>
+    </nav> -->
+
+<!-- TECNOLOGIAS-->
+    <article>
+        <div class="caja caja-2">
+            <h3>Tecnologías</h3>
+            <ul>
+                <li class="li-box">
+                    <div class="techBox">
+                        <img src="img/logo/html.svg" alt="html logo">
+                        <p class="techP"><strong>HMTL 5</p>
+                    </div>
+                </li>
+                <li class="li-box">
+                    <div class="techBox">
+                        <img src="img/logo/css.svg" alt="css logo">
+                        <p class="techP"><strong>CSS 3</strong></p>
+                    </div>
+                </li>
+                <li class="li-box">
+                    <div class="techBox">
+                        <img src="img/logo/js.svg" alt="logo javascript">
+                        <p class="techP"><strong>JavaScript</strong></p>
+                    </div>
+                </li>
+                <li class="li-box">
+                    <div class="techBox">
+                        <img src="img/logo/node.svg" alt="logo node">
+                        <p class="techP"><strong>NodeJS</strong></p>
+                    </div>
+                    </li>
+                <li class="li-box">
+                    <div class="techBox">
+                        <img src="img/logo/git.svg" alt="logo git">
+                        <p class="techP"><strong>GIT</strong></p>
+                    </div>
+                </li>
+                <li class="li-box">
+                    <div class="techBox">
+                        <img src="img/logo/sql.svg" alt="logo mysql">
+                        <p class="techP"><strong>MySql</strong></p>
+                    </div>
+                </li>
+                </div>
+            </ul>
+        </div>
+    </article>
+<!-- EXPERIENCIA-->
+    <article>
+        <div class="caja">
+            <h3>Experiencia</h3>
+            <ul>
+                <div class="centerBox">
+                    <li class="expText bgExp"><strong>2010-2014:</strong> desarrollador frontend junior en agencia Pérez.</li>
+                    <hr class="hrExp">
+                    <li class="expText bgExp"><strong>2014-2016:</strong> desarrollador full stack senior en Estocolmo INC.</li>
+                    <hr class="hrExp">
+                    <li class="expText bgExp"><strong>2016-2020:</strong> manager de ventas en ArgDev SRL.</li>
+                    <hr class="hrExp">
+                    <li class="expText bgExp"><strong>2020-Actualidad:</strong> desarrollador backend senior en Google inc. Argentina.</li>
+                </div>
+            </ul>
+        </div>
+    </article>
+<!-- BIOGRAFIA-->
+    <article>
+        <div class="caja">
+            <h3>Biografía</h3>
+            <p id="bioP"> 
+                Mi nombre es Johnny White, tengo 33 años y trabajo en desarrollo de sofware hace 12 años.
+                Vivo en la Ciudad de Buenos Aires, Argentina. Barrio de Almagro. Actualmente me desempeño
+                como desarrollador backend en Google Argentina. Amante de la comida venezolana. 
+                <br />
+                Mis pasatiempos son jugar al futbol, hacer yoga y salidas a la naturaleza (camping, trecking).
+            </p>
+        </div>
+    </article>
+<!-- FOOTER-CONTACTO-->
+    <footer>
+        <div class="caja" id="contactBox">
+            <h3>Contacto</h3>
+            <div class="triangulo" id="triangulo"></div>
+            <div class="trianguloInv" id="trianguloInv"></div>
+            <form action="" id="contactForm">
+                <label for="contactName">nombre</label>
+                <br />
+                <input type="text" id="contactName">
+                <br />
+                <label for="contactMail">email</label>
+                <br />
+                <input type="email" id="contactMail">
+                <br />
+                <label for="contactMsg">mensaje</label>
+                <br />
+                <textarea id="contactMsg"></textarea>
+                <br />
+                <input type="button" value="Enviar" id="contactBtn">
+            </form>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
